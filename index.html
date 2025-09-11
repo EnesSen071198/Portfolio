@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enes Şen | Kişisel Web Sitesi</title>
+    <title>Enes Şen</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
     <style>
         body {
@@ -86,11 +86,63 @@
             background: #00ffe7;
             color: #2d1e4f;
         }
-        @media (max-width: 600px) {
-            .center-content { flex-direction: column; }
-            .icon-links { gap: 20px; }
-            .icon-btn { width: 50px; height: 50px; font-size: 1.5em; }
-            .cv-btn { padding: 12px 24px; font-size: 1em; }
+        @media (max-width: 900px) {
+            .center-content {
+                flex-direction: column;
+                padding: 16px;
+                height: auto;
+            }
+            h1 {
+                font-size: 2em !important;
+            }
+            .cv-btn {
+                padding: 12px 24px;
+                font-size: 1em;
+                margin-bottom: 24px;
+            }
+            .icon-links {
+                gap: 16px !important;
+                flex-wrap: wrap;
+            }
+            .icon-btn {
+                width: 48px;
+                height: 48px;
+                font-size: 1.2em;
+            }
+            .icon-links > div {
+                margin-bottom: 12px;
+            }
+            .icon-links svg {
+                width: 28px;
+                height: 28px;
+            }
+            .icon-links span {
+                font-size: 0.9em;
+            }
+        }
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1.3em !important;
+            }
+            .cv-btn {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+            .icon-links {
+                gap: 8px !important;
+            }
+            .icon-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 1em;
+            }
+            .icon-links svg {
+                width: 20px;
+                height: 20px;
+            }
+            .icon-links span {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
